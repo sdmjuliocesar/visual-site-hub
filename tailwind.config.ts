@@ -13,7 +13,15 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        navy: "hsl(var(--navy))",
+        "navy-light": "hsl(var(--navy-light))",
+        orange: "hsl(var(--orange))",
+        "orange-light": "hsl(var(--orange-light))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
