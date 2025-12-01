@@ -71,7 +71,7 @@ export const Hero = () => {
             </Button>
             <Button size="lg" variant="outline" onClick={() => document.getElementById('services')?.scrollIntoView({
             behavior: 'smooth'
-          })} className="border-2 border-white font-semibold text-lg px-8 py-6 transition-all duration-300 bg-primary rounded-md text-primary">
+          })} className="border-2 border-white text-white font-semibold text-lg px-8 py-6 transition-all duration-300 bg-transparent hover:bg-white hover:text-navy rounded-xl">
               Conheça Nossos Serviços
             </Button>
           </motion.div>
