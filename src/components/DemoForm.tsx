@@ -113,7 +113,7 @@ export const DemoForm = () => {
         >
           <div className="bg-navy-light border border-white/10 rounded-2xl p-8 md:p-12">
             <h2 className="font-display text-3xl md:text-4xl text-white mb-8 text-center">
-              Faça da <span className="text-orange">Redução de Custos</span> o seu diferencial competitivo
+              Formulario <span className="text-orange">de Contato </span> com a Nowtech
             </h2>
 
             <Form {...form}>
