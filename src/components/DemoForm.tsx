@@ -82,10 +82,20 @@ export const DemoForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Simular envio (aqui você pode adicionar integração com backend)
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const { supabase } = await import("@/integrations/supabase/client");
       
-      console.log("Form submitted:", values);
+      const { error } = await supabase.functions.invoke("send-contact-email", {
+        body: {
+          name: `${values.nome} ${values.sobrenome}`,
+          email: values.email,
+          phone: values.telefone,
+          company: values.empresa,
+          employees: values.numeroFuncionarios,
+          message: values.mensagem || "Sem mensagem adicional",
+        },
+      });
+
+      if (error) throw error;
       
       toast.success("Solicitação enviada com sucesso!", {
         description: "Entraremos em contato em breve.",
@@ -93,6 +103,7 @@ export const DemoForm = () => {
       
       form.reset();
     } catch (error) {
+      console.error("Error sending email:", error);
       toast.error("Erro ao enviar solicitação", {
         description: "Por favor, tente novamente.",
       });
