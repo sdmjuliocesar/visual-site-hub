@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code, Bot, Lightbulb, Database } from "lucide-react";
+import { Code, Bot, Lightbulb, Database, Users } from "lucide-react";
 
 const services = [
   {
@@ -27,6 +27,12 @@ const services = [
     number: "04",
     title: "Conversão de Dados em Ativos",
     description: "Serviço Especializado que transforma dados brutos em ativos estratégicos. Garantindo a consistência e a qualidade da informação através da reestruturação."
+  },
+  {
+    icon: Users,
+    number: "05",
+    title: "Alocação de Profissionais",
+    description: "Disponibilizamos profissionais qualificados e especializados para atuar em projetos de tecnologia, garantindo expertise técnica e flexibilidade para atender às demandas da sua empresa."
   }
 ];
 
