@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code, Bot, Lightbulb, Database, Users } from "lucide-react";
+import { Code, Bot, Lightbulb, Database, Users, Cloud } from "lucide-react";
 
 const services = [
   {
@@ -33,6 +33,12 @@ const services = [
     number: "05",
     title: "Alocação de Profissionais",
     description: "Disponibilizamos profissionais qualificados e especializados para atuar em projetos de tecnologia, garantindo expertise técnica e flexibilidade para atender às demandas da sua empresa."
+  },
+  {
+    icon: Cloud,
+    number: "06",
+    title: "Backup em Nuvem",
+    description: "Soluções de backup seguras e escaláveis na nuvem, garantindo a proteção e recuperação dos seus dados críticos com alta disponibilidade e redundância."
   }
 ];
 
