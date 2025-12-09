@@ -46,7 +46,7 @@ export const Process = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-5xl md:text-6xl text-navy mb-6">
-            Nosso <span className="text-orange">Processo</span>
+            Como <span className="text-orange">Trabalhamos</span>
           </h2>
           <div className="h-1 w-24 bg-orange mx-auto mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
